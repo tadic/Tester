@@ -52,6 +52,26 @@ public class TestLogin {
         element.submit();
         assertEquals(expected, driver.getTitle());
     }
+    @Test
+    public void userCanNotLoginWithIncorrectUsernameAndSomePassword(){
+        String expected = "Digital Living";
+        WebElement element= driver.findElement(By.name("email"));
+        element.sendKeys("ivan.tadic014@gm");
+        element = driver.findElement(By.name("pass"));
+        element.sendKeys("somePassword");
+        element.submit();
+        assertEquals(expected, driver.getTitle());
+    }
+    @Test
+    public void userCanNotLoginWithEmptyUsernameAndPassword(){
+        String expected = "Digital Living";
+        WebElement element= driver.findElement(By.name("email"));
+        element.sendKeys("");
+        element = driver.findElement(By.name("pass"));
+        element.sendKeys("");
+        element.submit();
+        assertEquals(expected, driver.getTitle());
+    }
     
 
 }
