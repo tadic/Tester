@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="6.838" errors="0" skipped="0" tests="4" name="integrationTests.TestLogin">
+<testsuite failures="0" time="10.778" errors="0" skipped="0" tests="5" name="integrationTests.TestLogin">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -64,8 +64,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="3.175" classname="integrationTests.TestLogin" name="userCanLoginWithCorrectUsernameAndPassword"/>
-  <testcase time="0.858" classname="integrationTests.TestLogin" name="userCanNotLoginWithCorrectUsernameAndIncorrectPassword"/>
-  <testcase time="0.847" classname="integrationTests.TestLogin" name="userCanNotLoginWithIncorrectUsernameAndSomePassword"/>
-  <testcase time="1.904" classname="integrationTests.TestLogin" name="userCanNotLoginWithEmptyUsernameAndPassword"/>
+  <testcase time="6.562" classname="integrationTests.TestLogin" name="userCanLoginWithCorrectUsernameAndPassword"/>
+  <testcase time="0.939" classname="integrationTests.TestLogin" name="userCanNotLoginWithCorrectUsernameAndIncorrectPassword"/>
+  <testcase time="1.618" classname="integrationTests.TestLogin" name="userCanNotLoginWithIncorrectUsernameAndSomePassword"/>
+  <testcase time="0.838" classname="integrationTests.TestLogin" name="userCanNotLoginWithUsernameAndEmptyPassword"/>
+  <testcase time="0.765" classname="integrationTests.TestLogin" name="userCanNotLoginWithEmptyUsernameAndPassword"/>
 </testsuite>
